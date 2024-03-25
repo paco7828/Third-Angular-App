@@ -1,0 +1,10 @@
+form{
+    display: grid;
+    gap: 10px;
+    place-items: center;
+}
+
+form h1{
+    text-decoration: underline;
+    margin-bottom: 30px;
+}

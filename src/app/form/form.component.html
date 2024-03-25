@@ -1,0 +1,11 @@
+<form (submit)="alertName()" [formGroup]="registrationForm">
+    <h1>Registration form</h1>
+    @if(submitted){
+    <h2>Successful registration!</h2>
+    }
+    <input type="text" formControlName="firstName" placeholder="First name...">
+    <input type="text" formControlName="lastName" placeholder="Last name...">
+    <input type="password" formControlName="password" placeholder="Password...">
+    <input type="submit" [disabled]="!registrationForm.valid" value="Submit">
+    <input type="button" value="Delete current values" (click)="registrationForm.reset()">
+</form>
